@@ -47,8 +47,17 @@ $ git clone https://github.com/CharleBone/crud-rest.git
 # Archivo Postman: 
 
 ------
+# Uso de Doker
+
+Para usar el servicio en Docker, insertarmos esta linea en la terminal  "docker-compose up -d"
+Se creara la imagen y los contenedores, se podra utilizar el arhivo postman para la prueba
+
+------
+
+------
 # Local
 
 Para usar el servicio de forma local se debe crear una base de datos en el puerto 3306 con el nombre  "db_abm_rest"
-
+y en el archivo application.properties se debe comentar las lineas que especifica el archivo para usar en forma local
+o en docker
 ------

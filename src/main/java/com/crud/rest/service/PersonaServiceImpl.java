@@ -63,6 +63,7 @@ public class PersonaServiceImpl implements IPersonaService {
         Optional<Persona> personaActual = Optional.of(findById(id));
         personaActual.get().setEmail(persona.getEmail());
         personaActual.get().setPais(persona.getPais());
+        personaActual.get().setSexo(persona.getSexo());
         personaActual.get().setTelefono(persona.getTelefono());
         return personaRepository.save(personaActual.get());
     }

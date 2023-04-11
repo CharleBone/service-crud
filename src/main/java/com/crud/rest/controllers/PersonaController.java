@@ -32,7 +32,7 @@ public class PersonaController {
     }
 
     @PutMapping("/personas/{id}")
-    public Persona update(Persona persona, @PathVariable() Long id) {
+    public Persona update(@RequestBody Persona persona, @PathVariable() Long id) {
         return personaService.update(id, persona);
     }
 
