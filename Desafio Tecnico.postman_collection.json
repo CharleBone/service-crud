@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "c70ef7cd-95de-4968-b4df-dc5c252bf3b3",
+		"name": "Desafio Tecnico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Docker",
+			"item": [
+				{
+					"name": "ListarPersonas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/personas",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarPersonaPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/personas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GuardarPersona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carlos\",\r\n    \"edad\": \"66\",\r\n    \"pais\": \"ARGENTINA\",\r\n    \"email\": \"carlos.itbone@gmail.com\",\r\n    \"sexo\": \"M\",\r\n    \"telefono\": \"1163070728\",\r\n    \"numeroDni\": \"172551243\",\r\n    \"tipoDocumento\": \"DNI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/personas",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarPersona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pais\": \"CHILE\",\r\n    \"email\": \"carlos.itbone@gmail.com\",\r\n    \"telefono\": \"1163070728\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/personas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerEstadisticas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/estadisticas",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"estadisticas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerRelacionFamiliarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/relacionFamiliar/relaciones/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"relacionFamiliar",
+								"relaciones",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletear TODAS las relaciones",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/relacionFamiliar/relaciones/",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"relacionFamiliar",
+								"relaciones",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarRelacionFamiliar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/relacionFamiliar/personas/2/vinculos/PRIM@/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"relacionFamiliar",
+								"personas",
+								"2",
+								"vinculos",
+								"PRIM@",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
