@@ -37,7 +37,7 @@ public class PersonaServiceImpl implements IPersonaService {
 
     @Override
     public Persona save(Persona persona) {
-        //toUpperCase(persona);
+        toUpperCase(persona);
         Optional<Persona> personaOptional = Optional.of(persona);
         validateParams(personaOptional);
         return personaRepository.save(personaOptional.get());
