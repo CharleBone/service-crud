@@ -40,7 +40,7 @@ El proyecto consiste en generar una API-REST que exponga un servicio CRUD(Create
 
 Luego en el espacio de trabajo o workspace clonar el proyecto:
 
-$ git clone https://github.com/CharleBone/crud-rest.git
+$ git clone https://github.com/CharleBone/service-crud
 
 ------
 
